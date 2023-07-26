@@ -52,9 +52,11 @@ def app():
     st.title("Chat with your IMAGE 🏞️")
     # Sidebar contents
     with st.sidebar:
-      
+        st.title('EXL')
 
     uploaded_file = st.file_uploader('Upload your IMAGE', type=['png', 'jpeg', 'jpg'], key="imageUploader")
+
+
 
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
