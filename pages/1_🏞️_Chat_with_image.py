@@ -52,17 +52,7 @@ def app():
     st.title("Chat with your IMAGE 🏞️")
     # Sidebar contents
     with st.sidebar:
-        st.title('About')
-        st.markdown('''
-        This app is built using:
-        - [Streamlit](https://streamlit.io/)
-        - [LangChain](https://python.langchain.com/)
-        - [OpenAI](https://platform.openai.com/docs/models)
-        - [ViLT](https://huggingface.co/dandelin/vilt-b32-finetuned-vqa)
-        ''')
-        add_vertical_space(5)
-        st.write('Made by [Nicolas tch](https://twitter.com/nicolas_tch)')
-        st.write('Repository [Github](https://github.com/CodeAlchemyAI/ViLT-GPT)')
+      
 
     uploaded_file = st.file_uploader('Upload your IMAGE', type=['png', 'jpeg', 'jpg'], key="imageUploader")
 
