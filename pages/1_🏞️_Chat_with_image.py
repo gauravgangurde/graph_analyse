@@ -9,7 +9,8 @@ from streamlit_extras.add_vertical_space import add_vertical_space
 from langchain.chat_models import ChatOpenAI
 from io import BytesIO
 
-OPENAI_API_KEY = st.secrets["chat_gpt_key"]
+os.environ['OPENAI_API_KEY'] = st.secrets["chat_gpt_key"]
+ 
 
 llm = ChatOpenAI(temperature=0.2, model_name="gpt-3.5-turbo")
 prompt = PromptTemplate(
