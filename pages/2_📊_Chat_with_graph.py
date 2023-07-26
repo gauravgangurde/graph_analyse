@@ -58,9 +58,10 @@ def app():
 
     # Sidebar contents
     with st.sidebar:
-
+        st.title('EXL')
 
     uploaded_file = st.file_uploader('Upload a chart image.', type=['png', 'jpeg', 'jpg'], key="graphUploader")
+
 
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
