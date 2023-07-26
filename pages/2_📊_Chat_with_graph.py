@@ -6,6 +6,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.chat_models import ChatOpenAI
 from streamlit_extras.add_vertical_space import add_vertical_space
+import openai
 
 openai.api_key = st.secrets["chat_gpt_key"]
 
